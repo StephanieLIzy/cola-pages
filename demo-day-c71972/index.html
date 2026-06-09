@@ -650,6 +650,12 @@
         <span class="project-tag">状态管理</span>
         <div class="project-links"><a class="project-link-btn" href="https://xiaoguai.online/" target="_blank">来试玩 ↗</a></div>
       </div>
+      <div class="project-card">
+        <div class="project-name">🐱 Meowment · 城市遇猫手册</div>
+        <div class="project-intro">散步偶遇猫咪，拍照记录相遇点滴，生成专属故事，留存每份温柔瞬间。每一次邂逅都是城市小温暖，在这里记录相逢，收藏专属猫咪故事。</div>
+        <span class="project-tag">生活记录</span>
+        <div class="project-links"><a class="project-link-btn" href="https://meowment-b4f92262-qw754hifo.eazo.dev" target="_blank">立即体验 ↗</a></div>
+      </div>
     </div>
   </div>
 
@@ -838,8 +844,8 @@ new Chart(document.getElementById('sourceChart'), {
         '#06D6A0',   // mint green
         '#9B5DE5',   // vivid purple
       ],
-      borderColor: '#080d24',
-      borderWidth: 3,
+      borderColor: 'transparent',
+      borderWidth: 0,
       hoverOffset: 8,
     }]
   },
@@ -854,7 +860,9 @@ new Chart(document.getElementById('sourceChart'), {
           boxWidth: 12, 
           padding: 14, 
           font: { size: 13, weight: '500' },
-          color: '#d0e4ff'
+          color: '#d0e4ff',
+          usePointStyle: true,
+          pointStyle: 'circle'
         }
       }
     }
@@ -869,11 +877,11 @@ new Chart(document.getElementById('identityChart'), {
     datasets: [{
       data: [31, 16],
       backgroundColor: [
-        '#4A9EFF',   // bright blue
-        '#FF6B6B',   // coral red — strong contrast
+        '#4A9EFF',
+        '#FF6B6B',
       ],
-      borderColor: '#080d24',
-      borderWidth: 3,
+      borderColor: 'transparent',
+      borderWidth: 0,
       hoverOffset: 8,
     }]
   },
@@ -888,7 +896,9 @@ new Chart(document.getElementById('identityChart'), {
           boxWidth: 12, 
           padding: 16, 
           font: { size: 14, weight: '600' },
-          color: '#d0e4ff'
+          color: '#d0e4ff',
+          usePointStyle: true,
+          pointStyle: 'circle'
         }
       }
     }
